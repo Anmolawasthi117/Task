@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef } from "react";
+import React from "react";
 import Button from "./Button";
 import { MouseFollower } from 'react-mouse-follower';
 import { UpdateFollower } from 'react-mouse-follower';
 const Foreground = () => {
-  const ref = useRef(null);
+  
   const data = [
     { text: "whoa" },
     { text: "next level" },
@@ -27,11 +27,11 @@ const Foreground = () => {
       followSpeed: 1.5,
     }}>
     <div
-      ref={ref}
+      
       className="fixed top-0 left-0 z-[3] flex items-end w-full h-screen"
     >
       {data.map((item, index) => (
-        <Button data={item} key ={null} refrence={ref} />
+        <Button data={item} key ={null}  />
       ))}
       
       
